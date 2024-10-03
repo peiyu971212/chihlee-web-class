@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS 優先權範例</title>
+  <!-- 外部 CSS 文件 -->
+  <link rel="stylesheet" href="priority.css">
+  <!-- 內部 CSS -->
+  <style>
+    p {
+      color: blue; /* 內部樣式設置段落文字顏色為藍色 */
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <!-- 行內 CSS -->
+  <p style="color: red;">這是一段文字。</p>
+</body>
+</html>
