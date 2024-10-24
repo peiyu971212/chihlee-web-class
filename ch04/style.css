@@ -1,0 +1,73 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.letter_spacing {
+    color: #000099; /* 藍色*/
+    letter-spacing: 10px; /* 每個字母之間的距離設定為 10px，將文本的字母之間的距離拉大 */
+  }
+  .text_indent {
+    color: #ff0000;
+    text-indent: 50px; /*將段落的首行縮進 50px，段落的第一行會有一個50px的縮進*/
+  }
+  .line_height {
+    color: #33cc00;
+    line-height: 2;/*設置行高為 2 倍於字體大小的高度，使行與行之間的距離更寬鬆*/
+  }
+  .text_decoration {
+    color: #0000ff;
+    text-decoration: Underline;/*為文本添加下劃線效果，文本下會有一條下劃線*/
+  }
+  .text_transform {
+    color: #669900; /*橄欖綠*/
+    text-transform: Uppercase; /*將文本轉換為全大寫，無論原來的字母大小，文本會變成全大寫字母顯示。*/
+  }
+  .text_align {
+    color: #cc0000;
+    text-align: right; /*將文本右對齊，文本從頁面的右側開始對齊。*/
+  }  
