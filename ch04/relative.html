@@ -6,21 +6,26 @@
     <title>Document</title>
     <style>
       .container {
-        display: flex;
-        justify-content: center;
+        /*容器會水平居中*/
+        display: flex; /*將這個容器設置為彈性容器，這使得其子元素（也就是三個項目）可以靈活地排列。*/
+        justify-content: center; /*將彈性容器內的項目水平居中對齊*/
       }
       .item img {
-        display: block;
+        /*定義了三個項目，每個項目包含一張圖片*/
+        display: block; /*將圖片設置為塊級元素，使其佔滿父元素的寬度*/
       }
       .item-relative {
-        position: relative;
-        top: 30px;
-        left: 30px;
+        /*這個項目除了 item 類別外，還額外加上了 item-relative 類別，用來應用相對定位的樣式*/
+        position: relative; /*這個項目會相對於它原本應該在的位置進行偏移*/
+        top: 30px; /*將這個項目向上偏移 30 像素*/
+        left: 30px; /*將這個項目向右偏移 30 像素。*/
       }
     </style>
   </head>
   <body>
     <div class="container">
+      <!-- 內部的 .item 元素會垂直排列的原因是因為 <div> 元素的默認行為 
+        <div> 是塊級元素，默認情況下，它們會占據整行的寬度，每個塊級元素都會從新的一行開始。因此，所有的 .item 元素會在 .bg 內部垂直堆疊 -->
       <div>
         <div class="item"><img src="images/position/static.svg" /></div>
         <div class="item item-relative">
