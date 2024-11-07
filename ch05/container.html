@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox 屬性範例</title>
+  <style>
+    /* 基本樣式 */
+    .container {
+      display: flex;
+      margin: 20px;
+      border: 2px solid #333;
+      padding: 10px;
+      background-color: #f4f4f4;
+    }
+
+    .item {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      margin: 5px;
+      padding: 20px;
+      border-radius: 5px;
+    }
+
+    .item-1 { width: 100px; }
+    .item-2 { width: 150px; }
+    .item-3 { width: 120px; }
+  </style>
+</head>
+<body>
+
+  <!-- 示例1: flex-direction -->
+  <h2>flex-direction</h2>
+  <div class="container" style="flex-direction: row;">
+    <div class="item item-1">項目 1</div>
+    <div class="item item-2">項目 2</div>
+    <div class="item item-3">項目 3</div>
+  </div>
+  <p>主軸方向為橫向 (row)。</p>
+
+  <div class="container" style="flex-direction: column;">
+    <div class="item item-1">項目 1</div>
+    <div class="item item-2">項目 2</div>
+    <div class="item item-3">項目 3</div>
+  </div>
+  <p>主軸方向為縱向 (column)。</p>
+
+  <!-- 示例2: flex-wrap -->
+  <h2>flex-wrap</h2>
+  <div class="container" style="flex-wrap: wrap;">
+    <div class="item item-1">項目 1</div>
+    <div class="item item-2">項目 2</div>
+    <div class="item item-3">項目 3</div>
+    <div class="item item-1">項目 4</div>
+    <div class="item item-2">項目 5</div>
+  </div>
+  <p>項目換行。</p>
+
+  <div class="container" style="flex-wrap: nowrap;">
+    <div class="item item-1">項目 1</div>
+    <div class="item item-2">項目 2</div>
+    <div class="item item-3">項目 3</div>
+    <div class="item item-1">項目 4</div>
+    <div class="item item-2">項目 5</div>
+  </div>
+  <p>項目不換行。</p>
+
+  <!-- 示例3: justify-content -->
+  <h2>justify-content</h2>
+  <div class="container" style="justify-content: flex-start;">
+    <div class="item item-1">項目 1</div>
+    <div class="item item-2">項目 2</div>
+    <div class="item item-3">項目 3</div>
+  </div>
+  <p>項目對齊容器的起始點。</p>
+
+  <div class="container" style="justify-content: center;">
+    <div class="item item-1">項目 1</div>
+    <div class="item item-2">項目 2</div>
+    <div class="item item-3">項目 3</div>
+  </div>
+  <p>項目居中對齊。</p>
+
+  <div class="container" style="justify-content: space-between;">
+    <div class="item item-1">項目 1</div>
+    <div class="item item-2">項目 2</div>
+    <div class="item item-3">項目 3</div>
+  </div>
+  <p>項目均勻分布，第一個和最後一個項目對齊容器邊緣。</p>
+
+  <div class="container" style="justify-content: space-around;">
+    <div class="item item-1">項目 1</div>
+    <div class="item item-2">項目 2</div>
+    <div class="item item-3">項目 3</div>
+  </div>
+  <p>項目均勻分布，兩端的間距是中間間距的一半。</p>
+
+  <!-- 示例4: align-items -->
+  <h2>align-items</h2>
+  <div class="container" style="align-items: flex-start;">
+    <div class="item item-1">項目 1</div>
+    <div class="item item-2">項目 2</div>
+    <div class="item item-3">項目 3</div>
+  </div>
+  <p>項目對齊容器的上邊緣。</p>
+
+  <div class="container" style="align-items: center;">
+    <div class="item item-1">項目 1</div>
+    <div class="item item-2">項目 2</div>
+    <div class="item item-3">項目 3</div>
+  </div>
+  <p>項目垂直居中對齊。</p>
+
+  <div class="container" style="align-items: stretch;">
+    <div class="item item-1">項目 1</div>
+    <div class="item item-2">項目 2</div>
+    <div class="item item-3">項目 3</div>
+  </div>
+  <p>項目拉伸以填滿容器的交叉軸。</p>
+
+  <!-- 示例5: flex-grow, flex-shrink, flex-basis -->
+  <h2>flex-grow, flex-shrink, flex-basis</h2>
+  <div class="container">
+    <div class="item item-1" style="flex-grow: 1;">項目 1</div>
+    <div class="item item-2" style="flex-grow: 2;">項目 2</div>
+    <div class="item item-3" style="flex-grow: 1;">項目 3</div>
+  </div>
+  <p>項目根據空間均勻增長。</p>
+
+  <div class="container">
+    <div class="item item-1" style="flex-shrink: 1;">項目 1</div>
+    <div class="item item-2" style="flex-shrink: 2;">項目 2</div>
+    <div class="item item-3" style="flex-shrink: 1;">項目 3</div>
+  </div>
+  <p>項目根據容器寬度縮小，縮小比例由 `flex-shrink` 控制。</p>
+
+  <div class="container">
+    <div class="item item-1" style="flex-basis: 150px;">項目 1</div>
+    <div class="item item-2" style="flex-basis: 200px;">項目 2</div>
+    <div class="item item-3" style="flex-basis: 100px;">項目 3</div>
+  </div>
+  <p>設置每個項目的基準大小。</p>
+
+  <!-- 示例6: align-self -->
+  <h2>align-self</h2>
+  <div class="container" style="align-items: stretch;">
+    <div class="item item-1" style="align-self: flex-start;">項目 1</div>
+    <div class="item item-2" style="align-self: center;">項目 2</div>
+    <div class="item item-3" style="align-self: flex-end;">項目 3</div>
+  </div>
+  <p>單個項目的對齊方式，覆蓋 `align-items` 設置。</p>
+
+</body>
+</html>
