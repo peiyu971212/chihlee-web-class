@@ -1,4 +1,4 @@
-/* 基本樣式 */
+/* 基本設定 */
 html, body {
   width: 100%;
   height: 100%;
@@ -8,98 +8,78 @@ html, body {
 }
 
 .flex-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
+    display: flex;
+    flex-direction: column;
+  }
 
-.header, .footer {
-  width: 100%;
-  color: #ffffff;
-}
+  .header {
+    display: flex;
+    background-color: #3c0000;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  }
 
-.header {
-  background-color: #3C0000;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-  padding: 10px 20px;
-}
+  .title {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+  }
 
-.footer {
-  background-color: #D69F7E;
-  color: #000000;
-  padding: 10px 20px;
-}
+  .logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
 
-/* Logo區域 */
-.logo-section {
-  display: flex;
-  align-items: center;
-}
+  .logo-section {
+    display: flex;
+    align-items: center; /* 將內容垂直置中 */
+    margin-left: 20px;
+  }
 
-.logo {
-  width: 40px;
-  height: 40px;
-  margin-right: 10px;
-}
+  .menu-item {
+    color: #ffffff;
+    margin: 20px;
+  }
 
-.site-name {
-  font-size: 24px;
-  font-weight: bold;
-}
+  .menu-list {
+    display: flex;
+    list-style: none;
+  }
 
-/* 菜單 */
-.nav-menu, .footer-menu {
-  display: flex;
-}
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+  }
 
-.menu-list {
-  display: flex;
-  padding: 0;
-  margin: 0;
-}
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
 
-.menu-item {
-  list-style: none;
-  margin-right: 20px;
-  color: #ffffff;
-  cursor: pointer;
-}
+  .footer {
+    display: flex;
+    background-color: #d69f7e;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-.menu-item:hover {
-  text-decoration: underline;
-}
+  .footer-text {
+    padding-left: 20px;
+  }
+  
+  .p-text {
+    font-size: 20px;
+    color: #000000;
+  }
 
-/* 主要內容 */
-.main-content {
-  flex: 1;
-  max-width: 1000px;
-  width: 100%;
-  margin: 20px auto;
-  text-align: center;
-}
-
-.main-image {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-.footer-text {
-  font-size: 0.9rem;
-}
-
-.justify-content-space-between {
-  justify-content: space-between;
-}
-
-.d-flex {
-  display: flex;
-}
-
-.align-items-center {
-  align-items: center;
-}
-
-.list-style-none {
-  list-style: none;
-}
+  .footer-menu {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+  }
