@@ -5,9 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script>
-      let x;
-      console.log(x);
-      console.log(typeof x === "undefined");
+      var a = 5,
+        b = 0;
+      let x = 2,
+        y = 0;
+      {
+        var c = a + b;
+        let z = x + y;
+      }
+      console.log("c=", c); //5
+      console.log("z=", z); //error
     </script>
   </head>
   <body></body>
