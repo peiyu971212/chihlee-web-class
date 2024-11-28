@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script>
-      var a = 5,
-        b = 0;
-      let x = 2,
-        y = 0;
+      var a = 5;
+      var b = 0;
+      let x = 2;
+      let y = 0;
       {
-        var c = a + b;
-        let z = x + y;
+        var c = a + b; // 區域內計算 c
+        let z = x + y; // 區域內計算 z
+        y = 6;
+        console.log("y=", y);
       }
       console.log("c=", c); //5
       console.log("z=", z); //error

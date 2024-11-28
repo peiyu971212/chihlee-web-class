@@ -8,8 +8,8 @@
       var x = 2;
       function cal() {
         //定義cal函數
-        var x = 5; //x是區域變數，只在function有作用，不會影響全域變數
-        var y = 1;
+        x = 5;
+        y = 1; //沒有任何關鍵字，JavaScript 自動建立了全域變數 y
         console.log(x + y); //6
       }
       cal(); //執行cal函數
