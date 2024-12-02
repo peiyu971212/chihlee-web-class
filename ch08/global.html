@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      // 全域變數
+      var globalVar = "我是Var全域變數";
+      let globalLet = "我是Let全域變數";
+      const globalConst = "我是Const全域變數";
+
+      function myFunction() {
+        // 區域變數
+        var localVar = "我是Var區域變數";
+        let localLet = "我是Let區域變數";
+        const localConst = "我是Const區域變數";
+      }
+
+      myFunction(); //呼叫函示
+      console.log(localVar); // 可以存取全域變數
+      console.log(localLet); // 可以存取全域變數
+      console.log(localConst); // 可以存取區域變數
+    </script>
+  </head>
+  <body></body>
+</html>
+

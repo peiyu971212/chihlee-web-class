@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function functionA() {
+        console.log("函式陳述式");
+      }
+      functionA();
+
+      const myFunc = function (a, b) {
+        console.log("函式表達式的匿名函式");
+
+        return a + b;
+      };
+      myFunc(3, 5);
+
+      const myFunc2 = function add(a, b) {
+        console.log("函式表達式的具名函式");
+
+        return a + b;
+      };
+      myFunc2(3, 5);
+      add(3 + 5);
+    </script>
+  </head>
+  <body></body>
+</html>

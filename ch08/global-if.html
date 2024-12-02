@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      var globalVar = "我是Var";
+      let globalLet = "我是Let";
+      const globalConst = "我是Const";
+
+      if (typeof globalVar === "string") {
+        //符合條件式
+        var localVar = "我是Var";
+        let localLet = "我是Let";
+        const localConst = "我是Const";
+      }
+
+      console.log(globalVar); // 我是Var
+      console.log(globalLet); // 我是Let
+      console.log(globalConst); // 我是Const
+
+      // console.log(localVar); // 我是Var
+      // console.log(localLet); // error
+      // console.log(localConst); // error
+    </script>
+  </head>
+  <body></body>
+</html>
