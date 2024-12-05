@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      console.log(1 && 2); // 2 如果第一個運算元是真值，返回第二個運算元
+      console.log(0 && "hello"); // 0
+      console.log(true && false); // false
+
+      console.log(0 || "hello"); // "hello"
+      console.log(false || true); // true
+      console.log("" || 42); // 42
+
+      console.log(!true); // false
+      console.log(!false); // true
+      console.log(!"hello"); // false
+      console.log(!0); // true
+
+      let x = "1";
+      if (x === 1) {
+        console.log("程式執行");
+      } else {
+        console.log("程式執行else");
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

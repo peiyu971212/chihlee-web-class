@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      console.log(1 == "1"); // true（字串 '1' 被轉為數字 1）
+      console.log(true == 1); // true（布林值 true 被轉為數字 1）
+      console.log(null == undefined); // true（特殊情況，這兩者被認為是相等的）
+      console.log([] == false); // true（空陣列被轉為布林值再比較）
+
+      console.log(1 === "1"); // false（數字和字串型別不同）
+      console.log(true === 1); // false（布林值和數字型別不同）
+      console.log(null === undefined); // false（型別不同）
+      console.log([] === false); // false（型別不同）
+      console.log(1 === 1); // true
+
+      if (undefined) {
+        console.log("執行 undefined");
+      } else {
+        console.log("執行 else");
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
