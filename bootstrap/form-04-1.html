@@ -14,27 +14,19 @@
 
   <body>
     <div class="container">
-      <h3>使用者登入</h3>
+      <h3>輸入元素</h3>
       <form>
-        <div class="mb-3">
-          <label for="useremail" class="form-label">電子郵件</label>
-          <input
-            type="email"
-            class="form-control"
-            id="useremail"
-            placeholder="輸入電子郵件"
-          />
+        <div class="row">
+          <div class="col">
+            <label for="inputtext" class="control-label">文字輸入</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputtext"
+              placeholder="請輸入文字"
+            />
+          </div>
         </div>
-        <div class="mb-3">
-          <label for="userpasswd" class="form-label">密碼</label>
-          <input
-            type="password"
-            class="form-control"
-            id="userpasswd"
-            placeholder="輸入密碼"
-          />
-        </div>
-        <button type="submit" class="btn btn-primary">送出</button>
       </form>
     </div>
     <script
